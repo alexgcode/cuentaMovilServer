@@ -1,8 +1,9 @@
 from sqlalchemy import Column, String, Integer, Date, Float
 from DBConnection import Base
 
+
 class Expense(Base):
-    __tablename__= 'expense'
+    __tablename__ = 'expense'
 
     id = Column(Integer, primary_key=True)
     description = Column(String(100))

@@ -4,12 +4,13 @@ from LogTest import logger
 
 session = Session()
 
-allExpenses = session.query(Expense).all() # expense is the class
 
-print('\n### all expenses: ')
-for expense in allExpenses:
-    print(f'{expense.description} : {expense.amount} on date: {expense.date}')  # formater string evaluated each time runs
-print('')
+def allExpenses():
+    allExpenses = session.query(Expense).all()  # expense is the class
+    print('\n### all expenses: ')
+    for expense in allExpenses:
+        print(f'{expense.description} : {expense.amount} on date: {expense.date}')  # formater string evaluated each time runs
+    print('')
 
 
 over30Expenses = session.query(Expense).filter(Expense.amount > 30)
