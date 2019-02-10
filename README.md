@@ -63,12 +63,19 @@ Next we create de DB named 'test_cuentaMovil' and tables used using Workbench
 
 1 table named 'expense' with columns: id(int, autoincrement), description(varchar100), amount(float), date(datetime)
 
-# To run the server
+# To run the server gunicorn
 * connect to the server using putty and private key
 * go to directory of the flask server
 * start venv with source venv/bin/activate
 * create a file wsgi.py and import the main flask app and add it to main and run it
 * start gunicorn with gunicorn --bind 0.0.0.0:5000 wsgi:app
+
+# to stop gunicorn
+command to see de PID of gunicorn process
+* ps ax|grep gunicorn
+
+command to kill the process
+* kill -9 <PID_NUMBER>
 
 # configuring gunicorn
 Once we prove that our server work fine. We stop gunicorn.
