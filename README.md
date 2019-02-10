@@ -1,7 +1,7 @@
 # cuentaMovilServer
 The backend side of the cuentaMovil app
 
-#instalation of Nginx
+# instalation of Nginx
 First, it was installed Nginx on Ubuntu server 18.
 
 Nginx Instalation
@@ -25,7 +25,7 @@ $systemctl restart nginx
 To verify run again the next command:
 $systemctl status nginx
 
-#Instalation of python dependencies
+# Instalation of python dependencies
 For mysql conector
 Error: 
 Command "python setup.py egg_info" failed with error code 1 in /tmp/pip-build-8pl0ztdz/mysqlclient/
