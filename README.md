@@ -67,4 +67,5 @@ Next we create de DB named 'test_cuentaMovil' and tables used using Workbench
 * connect to the server using putty and private key
 * go to directory of the flask server
 * start venv with source venv/bin/activate
+* create a file wsgi.py and import the main flask app and add it to main and run it
 * start gunicorn 
