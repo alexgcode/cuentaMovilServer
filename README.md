@@ -69,3 +69,7 @@ Next we create de DB named 'test_cuentaMovil' and tables used using Workbench
 * start venv with source venv/bin/activate
 * create a file wsgi.py and import the main flask app and add it to main and run it
 * start gunicorn with gunicorn --bind 0.0.0.0:5000 wsgi:app
+
+# configuring gunicorn
+Once we prove that our server work fine. We stop gunicorn.
+And configure it as a service on ubuntu, that it will be waiting for a request in a socket.
