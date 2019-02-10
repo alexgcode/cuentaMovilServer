@@ -34,3 +34,26 @@ Out of the venv execute:
 sudo apt install libmysqlclient-dev
 Inside the venv(python 3.6) execute:
 pip install mysqlclient
+
+# Instalation of MYSQL
+sudo apt update
+sudo apt install mysql-server
+sudo mysql_secure_installation
+*put a password to root user
+connect with:
+mysql -u root -p
+
+*inside mysql
+CREATE USER 'alex'@'%' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON *.* TO 'sammy'@'%' WITH GRANT OPTION;
+* % for remote conections
+
+*change config file of mysql
+in the file /etc/mysql/mysql.conf.d/mysqld.cnf change:
+bind-address =  127.0.0.1
+to 
+bind-address =  0.0.0.0
+
+then save and restart with
+systemctl restart mysql.service
+
