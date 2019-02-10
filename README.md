@@ -73,3 +73,5 @@ Next we create de DB named 'test_cuentaMovil' and tables used using Workbench
 # configuring gunicorn
 Once we prove that our server work fine. We stop gunicorn.
 And configure it as a service on ubuntu, that it will be waiting for a request in a socket.
+
+# configuring Nginx
