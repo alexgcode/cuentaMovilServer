@@ -58,3 +58,6 @@ bind-address =  0.0.0.0
 then save and restart with
 systemctl restart mysql.service
 
+* Next we create de DB and tables used using Workbench
+1 table named 'expense' with columns: id(int, autoincrement), description(varchar100), amount(float), date(datetime)
+
