@@ -47,6 +47,7 @@ mysql -u root -p
 CREATE USER 'alex'@'%' IDENTIFIED BY 'password';
 GRANT ALL PRIVILEGES ON *.* TO 'sammy'@'%' WITH GRANT OPTION;
 * % for remote conections
+(pd: I'm using AWS so I have to change de inbound rules of the instance to allow connections on 3306 port)
 
 *change config file of mysql
 in the file /etc/mysql/mysql.conf.d/mysqld.cnf change:
