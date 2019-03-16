@@ -82,4 +82,4 @@ Once we prove that our server work fine. We stop gunicorn.
 And configure it as a service on ubuntu, that it will be waiting for a request in a socket.
 
 # Make a curl post from windows
-curl -i -X POST -H "Content-Type:application/json" -d "{\"description\": \"Frodo\",  \"amount\" : 10 }" http://x.x.x.x/addexpense
+curl -i -X POST -H "Content-Type:application/json" -d "{""description"": ""Frodo"",  ""amount"" : 10 }" http://x.x.x.x/addexpense
