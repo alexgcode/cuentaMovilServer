@@ -83,3 +83,8 @@ And configure it as a service on ubuntu, that it will be waiting for a request i
 
 # Make a curl post from windows
 curl -i -X POST -H "Content-Type:application/json" -d "{""description"": ""Frodo"",  ""amount"" : 10 }" http://x.x.x.x/addexpense
+
+# Changing database
+it's create a new database with the new table User and join it to the table Expense. Add foreign key to Expense table to create a 1 to M relationship.
+
+Then its change the file DBConnection, the create engine part to point to the new DB. And test if works
